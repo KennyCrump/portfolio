@@ -1,25 +1,37 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import "./App.css";
 
 class App extends Component {
+  state = {
+    menuToggle: false
+  };
+  showMenu = e => {
+    this.setState({ menuToggle: true });
+    e.stopPropagation();
+  };
   render() {
+    console.log("menu toggle: ", this.state.menuToggle);
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div
+        className="body"
+        onClick={() => this.setState({ menuToggle: false })}
+      >
+        <nav
+          onClick={e => e.stopPropagation()}
+          className={this.state.menuToggle ? "nav nav-slide" : "nav"}
+        >
+          <div className='nav-items-container'>
+            <p onClick={() => this.setState({menuToggle: false})}
+              className='close-menu-button'>X</p>
+            <p className="large-nav-links">HOME</p>
+            <p className="large-nav-links">SKILLS</p>
+            <p className="large-nav-links">PORTFOLIO</p>
+            <p className="large-nav-links">ABOUT</p>
+            <p className="large-nav-links">CONTACT</p>
+          </div>
+        </nav>
+        {!this.state.menuToggle && <button className='menu-button' onClick={this.showMenu}>Menu</button>}
       </div>
     );
   }
