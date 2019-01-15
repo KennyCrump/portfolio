@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Home from './Components/Home/Home'
 import "./App.css";
 
 class App extends Component {
@@ -31,7 +32,8 @@ class App extends Component {
             <p className="large-nav-links">CONTACT</p>
           </div>
         </nav>
-        {!this.state.menuToggle && <button className='menu-button' onClick={this.showMenu}>Menu</button>}
+        {<button className='menu-button' onClick={this.showMenu}>Menu</button> }
+        <Home />
       </div>
     );
   }
