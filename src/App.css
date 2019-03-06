@@ -1,14 +1,24 @@
+html {
+  scroll-behavior: smooth;
+}
+*{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
 .body{
   height: 100vh;
   width: 100vw;
 }
 .nav{
-  position: absolute;
+  position: fixed;
   left: -250px;
   top: 0;
   width: 250px;
   height: 100vh;
   background-color: #111538;
+  border-right: #a1a1a1 1px solid;
   transition: .5s;
   z-index: 10;
 }
@@ -17,7 +27,7 @@
 }
 .nav-items-container{
   width: 100%;
-  padding-top: 30px;
+  padding-top: 70px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -30,7 +40,7 @@
   color: white;
   position: absolute;
   top: 10px;
-  left: 10px;
+  right: 10px;
   font-weight: 700;
   transition: .7s;
   cursor: pointer;
@@ -41,23 +51,23 @@
   transform: translate(-1px);
 }
 .large-nav-links{
-  height: 22px;
-  font-size: 18px;
+  height: 30px;
+  font-size: 24px;
   margin: 10px;
   color: white;
-  transition: 1s ease-in-out;
+  transition: .1s ease-in-out;
   cursor: pointer;
 
 }
 .large-nav-links:hover{
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 700;
 }
 .menu-button{
-  position: absolute;
+  position: fixed;
   z-index: 1;
   top: 15px;
-  right: 20px; 
+  left: 20px; 
   height: 50px;
   width: 170px;
   font-size: 20px;

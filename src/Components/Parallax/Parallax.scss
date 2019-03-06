@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Nova+Flat');
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+.flex-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flex-r {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+h1 {
+  font-size: 6.6rem;
+  margin-bottom: 3.5rem;
+}
+h3 {
+  font-size: 3.6rem;
+}
+.title-hero {
+  background: rgba(245, 245, 245, 0.883);
+  width: 100vw;
+  height: 50vh;
+  position: absolute;
+  top: 20%;
+font-family: 'Russo One';
+  // font-family: 'Abel';  
+  // font-family: 'Nova Flat';
+  font-weight: 700;
+}
+.skill-hero {
+  background: rgba(97, 97, 97, 0.897);
+  color: whitesmoke;
+  width: 100vw;
+  // height: 50vh;
+  padding-top: 65px;
+  padding-bottom: 100px;
+  position: absolute;
+  top: 20%;
+  font-family: 'Nova Flat';
+  // font-weight: 700;
+  .skill {
+    padding: 30px;
+    margin: 10px 20px;
+    width: 170px;
+    p {
+      // font-family: 'Abel';
+      font-size: 1.4rem;
+      margin-top: 10px;
+    }
+    .skill-image {
+      height: 150px;
+    }
+  }
+}
+.project-hero {
+  justify-content: flex-start;
+  font-family: "Nova Flat";
+  font-weight: 700;
+  background: rgba(245, 245, 245, 0.76);
+  // position: absolute;
+  padding: 25px;
+  width: 100vw;
+  height: 100vh;
+  top: 20%;
+  .portfolio-title {
+    border-bottom: 1px solid black;
+    padding: 30px 100px;
+  }
+  .fa-arrow{
+      font-weight: 400;
+      font-size: 1.6rem;
+      text-align: right;
+      margin: 20px;
+      text-decoration: underline;
+      color: blue;
+  }
+}
+.about-hero{
+  background: rgba(97, 97, 97, 0.897);
+  color: whitesmoke;
+  width: 100vw;
+  padding-top: 65px;
+  padding-bottom: 100px;
+  // position: absolute;
+  // top: 20%;
+  h3{
+    font-family: 'Nova Flat';
+  }
+  img{
+    height: 270px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    text-align: left;
+    margin-bottom: 10px;
+    line-height: 2;
+  }
+  .about-text{
+    background-color: #111538;
+    width: 70vw;
+    height: 70vh;
+    border-radius: 15px;
+    border: 1px solid gray;
+    padding: 2.5%;
+  }
+}
+
+@media (max-width: 840px) {
+  .skill-hero {
+    .skill {
+      padding: 20px;
+      margin: 10px;
+      width: 100px;
+      .skill-image {
+        height: 70px;
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  h1 {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  .skill-hero {
+    .skill {
+      padding: 10px;
+      margin: 10px;
+      .skill-image {
+        height: 60px;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

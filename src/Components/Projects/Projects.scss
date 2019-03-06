@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC");
+@import url("https://fonts.googleapis.com/css?family=Arvo:400,700");
+
+.projects-container {
+  font-family: 'Nova Flat';
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+  h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin: 1.5rem 0;
+  }
+  p{
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      font-size: 1.3rem;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+  a{
+    color: blue;
+  }
+  a:visited{
+    color: blue;
+  }
+  .vid-div{
+    margin: 15px 0;
+      width: 100%;
+      padding-left: calc((width - 70vw) / 2)
+  }
+  .project-video {
+    // width: 710px; //710 : 400 is correct ratio
+    // height: 400px;
+    width: 100%;
+    height: calc(65vw * 40/71);
+
+  }
+ h4{
+   font-size: 2em;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   margin: 20px 0 10px 0;
+ }
+  .kodewars-pic{
+    width: 100%;
+  }
+}
+button.slick-arrow.slick-prev::before {
+    font-size: 70px;
+    position: relative;
+    left: -10vw !important;
+    transform: translate(50%);
+    z-index: 10;
+    color: #32708F
+  }
+  button.slick-arrow.slick-next::before {
+    position: relative;
+    font-size: 70px;
+    left: 6vw !important;
+    transform: translate(50%);
+    z-index: 10;
+    color: #32708F;
+  }
+  .slider{
+      width: 65vw;
+    //   margin: auto;
+      display: flex;
+      justify-content: center;
+
+  }
+  

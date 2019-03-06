@@ -1,0 +1,63 @@
+.contact-form{
+  width: 40vw;
+  background: rgba(25, 88, 124, 0.794);
+  height: 965px;
+  position: absolute;
+  top: 10%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-family: 'Nova Flat';
+    font-size: 3.6rem;
+    margin: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: whitesmoke 1px solid;
+    width: 400px;
+    text-align: center;
+    color: whitesmoke;
+  }
+  input, textarea{
+    width: 80%;
+    padding: 18px 20px;
+    color: #111538;
+    font-size: 1.6em;
+    border-radius: 15px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    background: whitesmoke;
+  }
+  button{
+    width: 80%;
+    padding: 18px 20px;
+    border-radius: 15px;
+    border: 1px solid white;
+    background: #1BB8E8;
+    margin-bottom: 15px;
+    font-size: 1.6em;
+    color: whitesmoke;
+  }
+  button:hover{
+    background: #1bacd8
+  }
+  button:active{
+    background: #1db8e7
+  }
+  p{
+    font-size: 1.6em;
+    color: whitesmoke;
+    margin-bottom: 15px;
+  }
+  .icons{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .icon-span{
+    font-size: 2.6em;
+    color: white;
+  }
+}
