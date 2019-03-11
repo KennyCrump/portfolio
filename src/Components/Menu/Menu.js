@@ -34,7 +34,7 @@ class Menu extends Component {
             <a href="#contact"><p onClick={this.hideMenu} className="large-nav-links">CONTACT</p></a>
           </div>
         </nav>
-        <button className='menu-button' onClick={this.showMenu}>Menu</button>
+        <button className='menu-button' onClick={this.showMenu}><span className='menu-icon'><i class="fas fa-bars"></i></span><span className='menu-word'> Menu</span></button>
         {this.props.children}
         </div> );
     }

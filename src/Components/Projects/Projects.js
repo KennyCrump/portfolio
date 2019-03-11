@@ -7,10 +7,6 @@ import kodewarsPic from '../../media/kodewars/Kodewars.png'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-
-
-
-
 class Projects extends Component {
     state = {  }
     render() { 
@@ -35,8 +31,8 @@ class Projects extends Component {
                     <div className='vid-div'>
                     <iframe className='project-video' title='appointhub' frameBorder='0' src={appointhubVideo} />
                     </div>
-                    <p>AppointHub covers all the needs of small businesses that are appointment-based.</p>
-                    <p className='fa-arrow'>See Project Details <i class="fas fa-arrow-right"> </i></p>
+                    {/* <p>AppointHub covers all the needs of small businesses that are appointment-based.</p> */}
+                    {/* <p className='fa-arrow'>See Project Details <i class="fas fa-arrow-right"> </i></p> */}
                 </div>
                 <div className="projects-container">
                     <h2>Kodewars</h2>
@@ -47,7 +43,7 @@ class Projects extends Component {
                     <div className='vid-div'>
                     <iframe className='project-video' title='kodewars' frameBorder='0' src={kodewarsVideo} />
                     </div>
-                    <p>AppointHub covers all the needs of small businesses that are appointment-based.</p>
+                    {/* <p>AppointHub covers all the needs of small businesses that are appointment-based.</p> */}
                 </div>
                 <div className="projects-container">
                     <h2>Kodewars</h2>
@@ -58,7 +54,7 @@ class Projects extends Component {
                     <div className='vid-div'>
                     <img className='kodewars-pic' src={kodewarsPic} alt="my contributions"/>
                     </div>
-                    <p>AppointHub covers all the needs of small businesses that are appointment-based.</p>
+                    {/* <p>AppointHub covers all the needs of small businesses that are appointment-based.</p> */}
                 </div>
             </Slider> 
     //         <Slider {...settings}>

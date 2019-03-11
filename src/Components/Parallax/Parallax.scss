@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Abel|Nova+Flat');
-@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url("https://fonts.googleapis.com/css?family=Abel|Nova+Flat");
+@import url("https://fonts.googleapis.com/css?family=Russo+One");
 .flex-c {
   display: flex;
   justify-content: center;
@@ -25,21 +25,21 @@ h3 {
   height: 50vh;
   position: absolute;
   top: 20%;
-font-family: 'Russo One';
-  // font-family: 'Abel';  
+  font-family: "Russo One";
+  // font-family: 'Abel';
   // font-family: 'Nova Flat';
   font-weight: 700;
 }
 .skill-hero {
-  background: rgba(97, 97, 97, 0.897);
+  background: rgba(116, 115, 115, 0.897);
   color: whitesmoke;
   width: 100vw;
   // height: 50vh;
   padding-top: 65px;
   padding-bottom: 100px;
   position: absolute;
-  top: 20%;
-  font-family: 'Nova Flat';
+  top: 15%;
+  font-family: "Nova Flat";
   // font-weight: 700;
   .skill {
     padding: 30px;
@@ -47,11 +47,11 @@ font-family: 'Russo One';
     width: 170px;
     p {
       // font-family: 'Abel';
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       margin-top: 10px;
     }
     .skill-image {
-      height: 150px;
+      height: 100px;
     }
   }
 }
@@ -62,23 +62,25 @@ font-family: 'Russo One';
   background: rgba(245, 245, 245, 0.76);
   // position: absolute;
   padding: 25px;
+  padding-bottom: 100px;
   width: 100vw;
-  height: 100vh;
+  height: 105vh;
   top: 20%;
   .portfolio-title {
     border-bottom: 1px solid black;
-    padding: 30px 100px;
+    font-size: 3rem;
+    padding: 25px 60px;
   }
-  .fa-arrow{
-      font-weight: 400;
-      font-size: 1.6rem;
-      text-align: right;
-      margin: 20px;
-      text-decoration: underline;
-      color: blue;
+  .fa-arrow {
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-align: right;
+    margin: 20px;
+    text-decoration: underline;
+    color: blue;
   }
 }
-.about-hero{
+.about-hero {
   background: rgba(97, 97, 97, 0.897);
   color: whitesmoke;
   width: 100vw;
@@ -86,38 +88,131 @@ font-family: 'Russo One';
   padding-bottom: 100px;
   // position: absolute;
   // top: 20%;
-  h3{
-    font-family: 'Nova Flat';
+  h3 {
+    font-family: "Nova Flat";
+    margin-bottom: 50px;
   }
-  img{
-    height: 270px;
+  img {
+    height: 230px;
     border-radius: 10px;
     margin-right: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     margin-top: 10px;
   }
-  p{
+  p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.6em;
+    font-size: 18px;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     line-height: 2;
+    width: 100%;
   }
-  .about-text{
+  .about-text {
     background-color: #111538;
     width: 70vw;
-    height: 70vh;
+    height: 650px;
     border-radius: 15px;
     border: 1px solid gray;
-    padding: 2.5%;
+    padding: 3%;
   }
 }
-
+// @media (max-width: 1950px) {
+//   .about-hero {
+//     p {
+//       // font-size: 22px;
+//     }
+//   }
+// }
+@media (max-width: 1600px) {
+  .about-hero {
+    img {
+      height: 200px;
+    }
+  }
+}
+@media (max-width: 1450px) {
+  .about-hero {
+    img {
+      height: 180px;
+      margin-bottom: 30px;
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .about-hero {
+    .about-text {
+      padding: 40px;
+    }
+    img {
+      height: 180px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .skill-hero{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    .skill{
+      .skill-image{
+        height: 70px;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .about-hero {
+    .about-text {
+      p {
+        font-size: 17px;
+      }
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .about-hero {
+    .about-text {
+      p {
+        font-size: 16px;
+      }
+      img{
+        height: 170px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  h1{
+    font-size: 5.6rem;
+  }
+  h3{
+    font-size: 3rem
+  }
+  .about-hero {
+    .about-text {
+      p {
+        font-size: 14px;
+      }
+      img{
+        height: 160px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
 @media (max-width: 840px) {
+  h1{
+    font-size: 4.6rem;
+  }
+  h3{
+    font-size: 2.6rem
+  }
   .skill-hero {
     .skill {
-      padding: 20px;
-      margin: 10px;
+      padding: 25px;
+      margin: 20px;
       width: 100px;
       .skill-image {
         height: 70px;
@@ -125,9 +220,82 @@ font-family: 'Russo One';
     }
   }
 }
+@media (max-width: 775px) {
+  .project-hero{
+  .portfolio-title {
+    font-size: 2rem;
+    padding: 25px 45px;
+  }
+}
+  .about-hero {
+    .about-text {
+      p {
+        font-size: 13px;
+      }
+      img{
+        height: 150px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+@media(max-width: 675px){
+  h1{
+    font-size: 3.8rem;
+  }
+  h3{
+    font-size: 2.2rem
+  }
+
+}
+@media(max-width: 650px){
+  .project-hero{
+    height: 90vh;
+  }
+}
+@media (max-width: 635px) {
+  .about-hero {
+    .about-text {
+      p {
+        font-size: 12px;
+      }
+      img{
+        height: 140px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .about-hero {
+    .about-text {
+      p {
+        font-size: 12px;
+      }
+      img{
+        height: 120px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 540px) {
+  .about-hero {
+    .about-text {
+      p {
+        font-size: 11px;
+      }
+      img{
+        height: 120px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
 @media (max-width: 575px) {
   h1 {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     margin-bottom: 1rem;
   }
   h3 {
@@ -136,8 +304,8 @@ font-family: 'Russo One';
 
   .skill-hero {
     .skill {
-      padding: 10px;
-      margin: 10px;
+      padding: 20px;
+      margin: 15px;
       .skill-image {
         height: 60px;
       }
@@ -145,5 +313,22 @@ font-family: 'Russo One';
         font-size: 1.2rem;
       }
     }
+  }
+}
+
+@media (max-width: 465px) {
+  .about-hero {
+    .about-text {
+      p {
+        font-size: 10px;
+      }
+      img{
+        height: 100px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .project-hero{
+    height: 80vh;
   }
 }

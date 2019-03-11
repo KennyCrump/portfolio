@@ -131,7 +131,7 @@ class ParallaxPage extends Component {
                 <p>
                   I am a Pre-Med Student turned Web Developer. Upon finishing my
                   Microbiology degree and taking a break to explore other
-                  interests instead of immediately applying for Medical Schools,
+                  interests rather than immediately applying for Medical Schools,
                   I took an intro level computer science class and found my true
                   passion in coding. From there, I attended DevMountain's
                   full-immersive Web Development Bootcamp to learn the
@@ -154,7 +154,7 @@ class ParallaxPage extends Component {
             {/* eslint-disable-next-line */}
         <a name="contact" />
         <Parallax blur={0} bgImage={img3} bgImageAlt="the cat" strength={800}>
-          <div className='flex-c' style={{ height: "100vh", position: "relative", top: "10%" }}>
+          <div className='flex-c' style={{ height: "100vh", minHeight: '950px', position: "relative", top: "10%" }}>
           <Contact />
             
           </div>

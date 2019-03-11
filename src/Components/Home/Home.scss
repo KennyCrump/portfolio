@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700');
+.titleContainer {
+  font-family: "Arvo", "Bowlby One SC","Luckiest Guy", "sans-serif";
+  font-weight: 700;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  h1 {
+
+    font-size: 14em;
+    // --maskX: 0;
+    // --maskY: 50;
+  }
+//   z-index: -1;
+}
+.titleWrapper {
+  color: #d4bbae;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  img{
+      height: 100%;
+      width: 100%;
+  }
+}
+.cloneWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #f2dcca;
+  transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  clip-path: polygon(
+    0 0,
+    calc(var(--maskX) * 1%) 0,
+    calc(var(--maskY) * 1%) 100%,
+    0 100%
+  );
+//   clip-path: polygon(0 0, 0 0, 50% 100%, 0 100%)
+}
+
+.homeContainer {
+//   height: 100vh;
+//   width: 100vw;
+ background: url(http://www.zotographics.com/blog_img//istock_000053598896_large_korr2.jpg) 0 0 / cover; 
+// background: url(https://i.ibb.co/hXwL0BG/portfolio-collage-2.jpg) 0 0 / cover;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   //   z-index: -1;
+//   img {
+//     // --maskXX: 0;
+//     // --maskYY: 50;
+//   }
+}
+.image {
+//   height: 100%;
+//   width: 100%;
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  --maskX: 0;
+  --maskY: 50;
+//     background: url(http://www.zotographics.com/blog_img//istock_000053598896_large_korr2.jpg)
+//   0 0 / cover;
+//   transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+//   clip-path: polygon(
+//     0 0,
+//     calc(var(--maskX) * 1%) 0,
+//     calc(var(--maskY) * 1%) 100%,
+//     0 100%
+//   );
+  clip-path: polygon(0 0, 0 0, 50% 100%, 0 100%)
+}

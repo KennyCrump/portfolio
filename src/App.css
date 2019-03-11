@@ -77,8 +77,33 @@ a{
   transition: .5s;
     outline: none;
 }
+.menu-icon{
+  margin-right: 5px;
+
+}
 .menu-button:hover{
   border: #bdbdbd 1px solid;
   background-color: #111538;
   color: whitesmoke;
+}
+.menu-icon:hover{
+  color: whitesmoke;
+}
+
+
+
+@media(max-width: 700px){
+  .menu-word{
+    display: none;
+  }
+  .menu-icon{
+    margin-right: 0;
+    color: white;
+  }
+  .menu-button{
+    background: #11153873;
+    width: 60px;
+    border: white 1px solid;
+    color: white;
+  }
 }
