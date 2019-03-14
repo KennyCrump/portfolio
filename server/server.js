@@ -22,6 +22,7 @@ app.post("/send", async (req, res) => {
   <p> ${req.body.message}</p>
   `;
 
+  console.log(`${USER}9@hotmail.com`, PASS)
 const transporter = nodemailer.createTransport({
     service: "hotmail",
     auth: {
