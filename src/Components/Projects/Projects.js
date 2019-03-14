@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Slider from "react-slick";
 import './Projects.scss'
 import appointhubVideo from '../../media/AppointhubVideo.mp4'
-import kodewarsVideo from '../../media/KodewarsVideo.mp4'
+import kodewarsVideo from '../../media/Kodewars-Video.mp4'
 import attendanceTrackerVideo from '../../media/AttendanceTracker.mp4'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -51,7 +51,7 @@ class Projects extends Component {
                 </div>
                 <div className="projects-container">
                 <h2>Attendance Tracker</h2>
-                    <p>App for automating the tracking of student attendance</p>
+                    <p>App for automating the tracking of student attendance.</p>
                     <p>Used internally by DevMountain, no code available.</p>
                     <h4>Video Walkthrough</h4>
                     <div className='vid-div'>
