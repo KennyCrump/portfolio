@@ -63,7 +63,7 @@ class ParallaxPage extends Component {
       {
         skill: "Express.js",
         img:
-          "https://pngimage.net/wp-content/uploads/2018/05/express-js-png-7.png"
+          "https://buzz-prod-photos.global.ssl.fastly.net/img/06b9ed56-ced3-4078-bfc8-ca0055a69d61"
       },
       {
         skill: "Socket.io",
@@ -131,7 +131,7 @@ class ParallaxPage extends Component {
                 <p>
                   I am a Pre-Med Student turned Web Developer. Upon finishing my
                   Microbiology degree and taking a break to explore other
-                  interests rather than immediately applying for Medical Schools,
+                  interests, instead of immediately applying for Medical Schools,
                   I took an intro level computer science class and found my true
                   passion in coding. From there, I attended DevMountain's
                   full-immersive Web Development Bootcamp to learn the

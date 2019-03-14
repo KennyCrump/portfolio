@@ -1,7 +1,7 @@
 .contact-form{
   width: 40vw;
   background: rgba(25, 88, 124, 0.794);
-  height: 775px;
+  height: 810px;
   position: absolute;
   top: 10%;
   border-radius: 15px;
@@ -49,10 +49,10 @@
   p{
     font-size: 1.2em;
     color: whitesmoke;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   .icons{
-    width: 15%;
+    width: 100px;
     display: flex;
     justify-content: space-between;
   }
@@ -73,7 +73,7 @@
 }
 @media (max-width: 700px) {
   .contact-form{
-    height: 730px;
+    height: 760px;
     width: 70vw;
     h1{
       font-size: 2.5rem;
@@ -94,7 +94,7 @@
 }
 @media (max-width: 500px) {
   .contact-form{
-    height: 660px;
+    height: 680px;
     width: 80vw;
     h1{
       font-size: 2.2rem;
@@ -110,6 +110,9 @@
     }
     button{
       font-size: 1em;
+    }
+    .icons{
+      width: 60px;
     }
     .icon-span{
       font-size: 1.5em;

@@ -36,7 +36,9 @@ export default class Contact extends Component {
         <h1>
           Contact Me
         </h1>
-        <p>Contact me via email:</p>
+        <p>Contact me at kennycrump@gmail.com</p>
+      <p>-OR-</p>
+        <p>Use this contact form:</p>
         <input onChange={e => this.handleChange('name', e.target.value)}
               value={name}
               placeholder='NAME' type="text" />
@@ -50,8 +52,8 @@ export default class Contact extends Component {
         <p>-OR-</p>
         <p>Find me on LinkedIn and GitHub</p>
         <div className='icons' >
-        <span className='icon-span'><i class="fab fa-linkedin"></i></span>
-        <span className='icon-span'><i class="fab fa-github-square"></i></span>
+        <a target='_blank' rel="noopener noreferrer" href="https://www.linkedin.com/in/kenny-crump/"><span className='icon-span'><i class="fab fa-linkedin"></i></span></a>
+        <a target='_blank' rel="noopener noreferrer" href="https://github.com/KennyCrump"><span className='icon-span'><i class="fab fa-github-square"></i></span></a>
         </div>
       </div>
       // <section id="contact">

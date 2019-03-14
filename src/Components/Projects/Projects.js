@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import Slider from "react-slick";
 import './Projects.scss'
-import appointhubVideo from '../../media/appointhub/AppointHub-Admin.mp4'
-import kodewarsVideo from '../../media/kodewars/Kodewars.mp4'
-import kodewarsPic from '../../media/kodewars/Kodewars.png'
+import appointhubVideo from '../../media/AppointhubVideo.mp4'
+import kodewarsVideo from '../../media/KodewarsVideo.mp4'
+import attendanceTrackerVideo from '../../media/AttendanceTracker.mp4'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -29,7 +29,9 @@ class Projects extends Component {
                     <p><a target='_blank' rel="noopener noreferrer" href="https://www.appointhub.com">www.appointhub.com</a>  || <a href="https://github.com/KennyCrump/clone-wars">Github Repo</a></p>
                     <h4>Video Walkthrough</h4>
                     <div className='vid-div'>
-                    <iframe className='project-video' title='appointhub' frameBorder='0' src={appointhubVideo} />
+                    <video className='project-video' title='kodewars'  controls>
+                        <source src={appointhubVideo}/>
+                    </video>
                     </div>
                     {/* <p>AppointHub covers all the needs of small businesses that are appointment-based.</p> */}
                     {/* <p className='fa-arrow'>See Project Details <i class="fas fa-arrow-right"> </i></p> */}
@@ -41,18 +43,21 @@ class Projects extends Component {
                     <p><a target='_blank' rel="noopener noreferrer" href="https://www.kodewars.net">www.kodewars.net</a> || <a target='_blank' href="https://github.com/KennyCrump/clone-wars">Github Repo</a></p>
                     <h4>Video Walkthrough</h4>
                     <div className='vid-div'>
-                    <iframe className='project-video' title='kodewars' frameBorder='0' src={kodewarsVideo} />
+                    <video className='project-video' title='kodewars'  controls>
+                        <source src={kodewarsVideo}/>
+                    </video>
                     </div>
                     {/* <p>AppointHub covers all the needs of small businesses that are appointment-based.</p> */}
                 </div>
                 <div className="projects-container">
-                    <h2>Kodewars</h2>
-                    <p>Group Project - CodeWars-inspired Coding Challenge Site</p>
-                    {/* eslint-disable-next-line */}
-                    <p><a target='_blank' rel="noopener noreferrer" href="https://www.kodewars.net">www.kodewars.net</a> || <a target='_blank' href="https://github.com/KennyCrump/clone-wars">Github Repo</a></p>
-                    <h4>Tech and Contributions</h4>
+                <h2>Attendance Tracker</h2>
+                    <p>App for automating the tracking of student attendance</p>
+                    <p>Used internally by DevMountain, no code available.</p>
+                    <h4>Video Walkthrough</h4>
                     <div className='vid-div'>
-                    <img className='kodewars-pic' src={kodewarsPic} alt="my contributions"/>
+                    <video className='project-video' title='kodewars'  controls>
+                        <source src={attendanceTrackerVideo}/>
+                    </video>
                     </div>
                     {/* <p>AppointHub covers all the needs of small businesses that are appointment-based.</p> */}
                 </div>
